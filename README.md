@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Меломан
 
-## Getting Started
+Сайт для генерации песен по твоему запросу
 
-First, run the development server:
+### О проекте
+Меломан — это сервис, где ты можешь создать свою уникальную песню: напиши историю или настроение, а ИИ сгенерирует текст и музыку.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Пока основной функционал доступен в Telegram-боте, а здесь — витрина и личный кабинет.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Как пользоваться
+- Введи текст или идею песни
+- Выбери тариф (1 песня — 200 ₽ или 20 песен — 2000 ₽)
+- Оплати через ЮKassa
+- Получи готовую песню с плеером и скачиванием
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Технологии
+- Next.js 14
+- Tailwind CSS
+- Авторизация через Telegram
+- Генерация текста: ChatGPT API
+- Генерация музыки: Suno API
+- Оплата: ЮKassa
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Статус
+Сайт в разработке. Скоро будет форма генерации и личный кабинет с историей песен и балансом.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub: https://github.com/koljn2007/meloman-website
+Telegram-бот: @meloMan_createsong_bot
