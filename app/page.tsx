@@ -83,6 +83,24 @@ export default function Home() {
         Создай свою уникальную песню за минуты
       </p>
 
+      {/* Кнопка авторизации через Telegram (popup-окно) */}
+    <button
+      onClick={() => {
+        const botId = '8782696769'; // ← замени на СВОЙ bot_id (число до двоеточия в токене)
+        const origin = encodeURIComponent(window.location.origin); // автоматически берёт https://meloman-website.vercel.app
+        const url = `https://oauth.telegram.org/auth?bot_id=${botId}&origin=${origin}&embed=1&request_access=write&return_to=${origin}`;
+
+        // Открываем popup-окно
+        const popup = window.open(url, 'Telegram Auth', 'width=600,height=700,resizable=yes,scrollbars=yes');
+        if (!popup) {
+          alert('Разрешите всплывающие окна в браузере');
+        }
+      }}
+      className="mt-8 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold py-4 px-10 rounded-full text-xl transition-all transform hover:scale-105 shadow-xl"
+    >
+      Войти через Telegram
+    </button>
+
       <Link
         href="/generate"
         className="inline-flex items-center justify-center bg-gradient-to-r from-cyan-600 to-blue-700 hover:from-cyan-700 hover:to-blue-800 text-white font-bold py-5 px-10 sm:py-6 sm:px-14 rounded-full text-xl sm:text-2xl transition-all transform hover:scale-105 shadow-2xl shadow-cyan-500/40 active:scale-95"
